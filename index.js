@@ -1,4 +1,4 @@
-const express = require("express");
+const express = require("express"); 
 const cors = require("cors");
 const app = express();
 const fs = require("fs");
@@ -10,7 +10,8 @@ app.get("/", function (request, response) {
   try {
     response.sendFile(__dirname + "/index.html");
   } catch (error) {
-    response.json({ message: "error en cargar " });
+    response
+    .json({ message: "error en cargar " });
   }
 });
 
