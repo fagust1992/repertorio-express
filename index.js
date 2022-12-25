@@ -10,7 +10,7 @@ app.get("/", function (request, response) {
   try {
     response.sendFile(__dirname + "/index.html");
   } catch (error) {
-    res.json({ message: "error en cargar " });
+    response.json({ message: "error en cargar " });
   }
 });
 
